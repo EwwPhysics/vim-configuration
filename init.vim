@@ -87,6 +87,9 @@ nnoremap ^ 0
 " edit vimrc
 cnoremap rc<CR> e $MYVIMRC<CR>
 
+" switch between tabs
+cnoremap t<CR> tabn<CR>
+
 " toggle nerdtree
 cnoremap nt<CR> NERDTreeToggle<CR>
 " make nerdtree open in current directory
