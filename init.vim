@@ -1,53 +1,39 @@
 " PLUGINS
 call plug#begin("~/.config/nvim/plugged/start")
 
-" coc autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" auto-indentation
-" Plug 'vim-scripts/indentpython.vim'
 
 " python syntax highlighting stuff (includes support for fstrings)
 Plug 'vim-python/python-syntax'
 let g:python_highlight_builtins = 1
 
-" monokai pro!!!
 Plug 'phanviet/vim-monokai-pro'
 
-" rainbow parentheses
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
 
-" file system explorer / file tree
 Plug 'scrooloose/nerdtree'
 
-" git integration
 Plug 'tpope/vim-fugitive'
 
-" git diff colors and stuff
 Plug 'airblade/vim-gitgutter'
 highlight! link SignColumn LineNr
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-" fuzzy finder for navigating between files
 Plug 'junegunn/fzf'
 
-" LaTeX support
 Plug 'lervag/vimtex'
 
-" starting menu (MRU)
 Plug 'mhinz/vim-startify'
 
-" statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='simple'
 
 Plug 'nvie/vim-flake8'
 
-" rust support
 Plug 'rust-lang/rust.vim'
 filetype plugin indent on
 
@@ -98,10 +84,10 @@ nnoremap 0 ^
 nnoremap ^ 0
 
 
-" easily edit vimrc
+" edit vimrc
 cnoremap rc<CR> e $MYVIMRC<CR>
 
-" easily toggle nerdtree
+" toggle nerdtree
 cnoremap nt<CR> NERDTreeToggle<CR>
 " make nerdtree open in current directory
 set autochdir
