@@ -88,7 +88,7 @@ nnoremap ^ 0
 cnoremap rc<CR> e $MYVIMRC<CR>
 
 " switch between tabs
-cnoremap t<CR> tabn<CR>
+nnoremap <S-T> :tabn<CR>
 
 " toggle nerdtree
 cnoremap nt<CR> NERDTreeToggle<CR>
@@ -140,7 +140,7 @@ au BufNewFile,BufRead *.py
     \ set tabstop=4
     \| set softtabstop=4
     \| set shiftwidth=4
-    \| set textwidth=100
+    \| set textwidth=150
     \| set expandtab
     \| set fileformat=unix
 
