@@ -30,7 +30,7 @@ Plug 'mhinz/vim-startify'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='simple'
+let g:airline_theme='badwolf'
 
 Plug 'nvie/vim-flake8'
 
@@ -57,6 +57,7 @@ hi Comment ctermfg=97
 
 " show line numbers
 set rnu
+set nu
 
 
 " MAPPINGS
@@ -75,9 +76,6 @@ nnoremap <C-H> <C-W><C-H>
 inoremap jk <ESC>
 vnoremap jk <ESC>
 cnoremap jk <ESC>
-inoremap kj <ESC>
-vnoremap kj <ESC>
-cnoremap kj <ESC>
 
 " press 0 instead of ^ for first character of line
 nnoremap 0 ^
@@ -90,8 +88,6 @@ cnoremap rc<CR> e $MYVIMRC<CR>
 " switch between tabs
 nnoremap <S-T> :tabn<CR>
 
-" toggle nerdtree
-cnoremap nt<CR> NERDTreeToggle<CR>
 " make nerdtree open in current directory
 set autochdir
 let NERDTreeChDirMode=2
