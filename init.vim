@@ -81,6 +81,7 @@ nnoremap <leader>t :tabe<CR>
 
 """ MAPPINGS
 
+let mapleader = '\'
 " easily run python files
 " :py to run.
 cnoremap py<CR> w !python3<CR>
