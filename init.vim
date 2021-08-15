@@ -79,6 +79,12 @@ nnoremap <leader><S-T> :tabp<CR>
 nnoremap <leader>t :tabe<CR>
 
 
+""" MAPPINGS
+
+" easily run python files
+" :py to run.
+cnoremap py<CR> w !python3<CR>
+
 " get to normal mode without pressing ESC
 inoremap jk <ESC>
 vnoremap jk <ESC>
@@ -88,12 +94,8 @@ cnoremap jk <ESC>
 nnoremap 0 ^
 nnoremap ^ 0
 
-
 " edit vimrc
 cnoremap rc<CR> e $MYVIMRC<CR>
-
-" switch between tabs
-nnoremap <S-T> :tabn<CR>
 
 " make nerdtree open in current directory
 set autochdir
@@ -101,7 +103,7 @@ let NERDTreeChDirMode=2
 cnoremap nt<cr> NERDTree .<CR>
 
 
-" COC Settings
+""" COC Settings
 
 " map TAB to autocomplete
 inoremap <silent><expr> <TAB>
