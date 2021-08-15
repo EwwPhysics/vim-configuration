@@ -58,17 +58,26 @@ set number
 " hi Normal guibg=NONE ctermbg=NONE
 " hi NonText guibg=None ctermbg=None
 
-" MAPPINGS
 
-" easily run python files
-" :py to run.
-cnoremap py<CR> w !python3<CR>
+""" BUFFERS AND TABS
+
+" new windows open to the right
+set splitright
 
 " split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" tabs
+" Shift-T to go to next tab
+nnoremap <S-T> :tabn<CR> 
+" <leader>Shift-T to go to previous tab
+nnoremap <leader><S-T> :tabp<CR>
+" <leader>t to create a new tab
+nnoremap <leader>t :tabe<CR>
+
 
 " get to normal mode without pressing ESC
 inoremap jk <ESC>
