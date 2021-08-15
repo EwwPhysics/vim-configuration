@@ -41,20 +41,22 @@ syntax on
 
 colorscheme monokai_pro
 
-" visual mode color
+" visual mode highlight and text colors
 hi Visual guifg=White guibg=grey gui=none
 
-" transparent
-" hi Normal guibg=NONE ctermbg=NONE
-" hi NonText guibg=None ctermbg=None
+" rainbow brackets
+let g:rainbow_active = 1
 
 " comment color
 hi Comment ctermfg=97
 
 " show line numbers
-set rnu
-set nu
+set relativenumber
+set number
 
+" transparent
+" hi Normal guibg=NONE ctermbg=NONE
+" hi NonText guibg=None ctermbg=None
 
 " MAPPINGS
 
