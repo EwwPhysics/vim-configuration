@@ -1,20 +1,16 @@
-" PLUGINS
+""" PLUGINS
 call plug#begin("~/.config/nvim/plugged/start")
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='badwolf'
 
-" python syntax highlighting stuff (includes support for fstrings)
-Plug 'vim-python/python-syntax'
-let g:python_highlight_builtins = 1
-
-Plug 'phanviet/vim-monokai-pro'
-
-Plug 'luochen1990/rainbow'
-let g:rainbow_active = 1
-
-Plug 'scrooloose/nerdtree'
-
-Plug 'tpope/vim-fugitive'
+Plug 'lervag/vimtex'
+let g:tex_flavor  = 'latex'
+let g:tex_conceal = ''
+let g:vimtex_latexmk_continuous = 1
+let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_view_method = 'skim'
 
 Plug 'airblade/vim-gitgutter'
 highlight! link SignColumn LineNr
@@ -22,21 +18,18 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
+Plug 'vim-python/python-syntax'
+let g:python_highlight_builtins = 1
+
+Plug 'luochen1990/rainbow'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'phanviet/vim-monokai-pro'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf'
-
-Plug 'lervag/vimtex'
-
 Plug 'mhinz/vim-startify'
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='badwolf'
-
 Plug 'nvie/vim-flake8'
-
 Plug 'rust-lang/rust.vim'
-filetype plugin indent on
-
 
 call plug#end()
 
