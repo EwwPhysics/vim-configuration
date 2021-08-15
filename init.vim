@@ -82,6 +82,10 @@ nnoremap <leader>t :tabe<CR>
 """ MAPPINGS
 
 let mapleader = '\'
+
+" make mappings time out in .25 seconds
+set timeoutlen=250
+
 " easily run python files
 " :py to run.
 cnoremap py<CR> w !python3<CR>
