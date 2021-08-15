@@ -34,8 +34,11 @@ Plug 'rust-lang/rust.vim'
 call plug#end()
 
 
+""" DISPLAY
 
-" COLOR SCHEME
+filetype plugin indent on
+syntax on
+
 colorscheme monokai_pro
 
 " visual mode color
